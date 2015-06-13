@@ -1,0 +1,10 @@
+body {
+	font-size: 20px;
+}
+
+#content {
+	width: 20em;
+	height: 10em;
+	background-color: blue;
+	margin: 0 auto;
+}
