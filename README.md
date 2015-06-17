@@ -9,3 +9,4 @@ Estos son mis TPs para el curso de FullStack de CoderHouse.
 - [02 GIT](Tps/02)  
 
 ## Ejercicios en clase
+- [Clase 03 CSS Positioning](Clases/03/Ejercicio)  
