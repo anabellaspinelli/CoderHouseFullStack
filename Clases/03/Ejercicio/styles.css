@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+.border-green {
+	border: 5px solid #55aa33;
+}
+
+/* POSITION */
+#content.position {
+	min-height: 100px;
+}
+
+.nav.position {
+	width: 15%;
+	position: absolute;
+	min-height: 200px;
+}
+
+section.position {		
+	margin-left: 15%;
+	padding: 50px 0;
+}
+
+/* FLOAT */
+.nav.float {
+	float: left;
+	width: 15%;
+	min-height: 200px;
+}
+
+section.float {
+	margin-left: 15%;
+	padding: 50px 0 50px 0;
+}
+
+/* AL REVES */
+.nav.alreves {
+	float: right;
+	margin-left: 85%;
+	width: 15%;
+}
+
+section.alreves {
+	width: 85%;
+	padding: 50px 0 50px 0;
+}
