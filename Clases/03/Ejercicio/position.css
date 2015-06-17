@@ -1,0 +1,22 @@
+* {
+	box-sizing: border-box;
+}
+
+#content {
+	min-height: 100px;
+}
+
+.nav {
+	width: 15%;
+	position: absolute;
+	min-height: 200px;
+}
+
+.border-green {
+	border: 5px solid #55aa33;
+}
+
+section {		
+	margin-left: 15%;
+	padding: 50px 0;
+}

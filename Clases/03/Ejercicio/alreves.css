@@ -1,0 +1,21 @@
+* {
+	box-sizing: border-box;
+}
+
+#content {	
+}
+
+.nav {
+	float: right;
+	margin-left: 85%;
+	width: 15%;
+}
+
+.border-green {
+	border: 5px solid #55aa33;
+}
+
+section {
+	width: 85%;
+	padding: 50px 0 50px 0;
+}

@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+
+#content {
+	min-height: 500px;
+}
+
+.nav {
+	width: 15%;
+	min-height: 200px;
+	position: absolute;
+}
+
+.border-green {
+	border: 5px solid #55aa33;
+}
+
+section {		
+	margin-left: 15%;
+	padding: 50px 0;
+}
+
+.flexbox {
+	-webkit-align-items: center;
+	align-items: center;
+	display: -webkit-flex;
+	display: flex;
+	height: 100px;
+}
