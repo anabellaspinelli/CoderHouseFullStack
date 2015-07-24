@@ -1,5 +1,5 @@
-function obtenerResultado(operacion) {
-	var soluciones = [];
+function obtenerResultado(operation) {
+	var results = [];
 	var left;
 
 	if (!(arguments.length%2)) {
@@ -10,25 +10,25 @@ function obtenerResultado(operacion) {
 			left = arguments[i];
 		}
 		else {
-			soluciones.push(operar(operacion, left, arguments[i]));
+			results.push(operate(operation, left, arguments[i]));
 		}
 	}
-	console.log(soluciones);
+	console.log(results);
 }
 
-function operar(operacion, a, b) {
-	switch(operacion) {
-		case 'sumar':
+function operate(operation, a, b) {
+	switch(operation) {
+		case 'add':
 			return a + b;
-		case 'restar':
+		case 'substract':
 			return a - b;
-		case 'multiplicar':
+		case 'multiply':
 			return a * b;
-		case 'dividir':
+		case 'divide':
 			return a / b;
 		default:
 			throw new Error('Invalid Operation');
 	}
 }
 
-obtenerResultado('dividir', 3, 2, 4, 5, 6, 1);
+obtenerResultado('multiply', 3, 2, 4, 5, 6, 1);
