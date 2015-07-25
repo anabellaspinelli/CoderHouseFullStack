@@ -3,7 +3,8 @@ function obtenerResultado(operation) {
 	var left;
 
 	if (!(arguments.length%2)) {
-		throw new Error('Invalid Arguments');
+		console.error('Invalid Amount of Operands');
+		return;
 	}
 	for (var i = 1; i < arguments.length; i++) {
 		if (i%2) {
@@ -13,7 +14,7 @@ function obtenerResultado(operation) {
 			results.push(operate(operation, left, arguments[i]));
 		}
 	}
-	return results;
+	 console.log(results);
 }
 
 function operate(operation, a, b) {
@@ -27,8 +28,14 @@ function operate(operation, a, b) {
 		case 'divide':
 			return a / b;
 		default:
-			throw new Error('Invalid Operation');
+			console.error('Invalid Operation');
 	}
 }
 
-console.log(obtenerResultado('multiply', 3, 2, 4, 5, 6, 1));
+console.log('%cResultados de script.js', 'background: blue; color: white; font-size: x-large');
+obtenerResultado('add', 2, 3, 4, 5);
+obtenerResultado('substract', 2, 3, 4, 5);
+obtenerResultado('multiply', 2, 3, 4, 5);
+obtenerResultado('divide', 2, 3, 4, 5);
+obtenerResultado('sadd', 2, 3, 4, 5);
+obtenerResultado('add', 2, 3, 4);
