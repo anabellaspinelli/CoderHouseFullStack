@@ -13,7 +13,7 @@ function obtenerResultado(operation) {
 			results.push(operate(operation, left, arguments[i]));
 		}
 	}
-	console.log(results);
+	return results;
 }
 
 function operate(operation, a, b) {
@@ -31,4 +31,4 @@ function operate(operation, a, b) {
 	}
 }
 
-obtenerResultado('multiply', 3, 2, 4, 5, 6, 1);
+console.log(obtenerResultado('multiply', 3, 2, 4, 5, 6, 1));
