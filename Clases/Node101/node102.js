@@ -90,9 +90,72 @@ function createReadHandler(pos) {
 
 for (var i = 0; i < filenames.length; i++) {
 	curFilename = filenames[i];
-
 	fs.readFile(curFilename, 'UTF8', createReadHandler(i));
 }
+
+///////////////////////////////////////////////////////////////////////
+
+var filenames = process.argv.slice(2);
+var fileContents = [];
+var processed = 0;
+var curFilename;
+
+for (var i = 0; i < filenames.length; i++) {
+	curFilename = filenames[i];
+	fs.readFile(curFilename, 'UTF8', createReadFunction(i));
+};
+
+function createReadFunction(pos) {
+	return function(err, data) {
+		processed++;
+		if (err) {
+			console.log(err);
+			return
+		}
+
+		fileContents[pos] = data;
+
+		if (processed === filenames.length) {
+			console.log(fileContents.join(''));
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

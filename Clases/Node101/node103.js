@@ -21,7 +21,7 @@ fs.readdir(path, function(err, data) {
 			}
 
 			if (processed === dirContents.length) {
-				console.log(dirs);
+				console.log('The given path contains the followin subdirectories \n' + dirs);
 			}
 		});
 	});
