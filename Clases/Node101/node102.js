@@ -110,7 +110,7 @@ function createReadFunction(pos) {
 		processed++;
 		if (err) {
 			console.log(err);
-			return
+			return;
 		}
 
 		fileContents[pos] = data;
