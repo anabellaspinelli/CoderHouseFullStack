@@ -8,7 +8,7 @@ fs.readFile(filename, 'utf8', function(err, data) {
 		return;
 	}
 
-	fs.writeFile(createNewFileName(filename), vowelsToUppercase(data), 'utf8', function(err, data) {
+	fs.writeFile(createNewFileName(filename), vowelsToUppercase(data), 'utf8', function(err) {
 		if (err) {
 			console.log(err);
 			return;
