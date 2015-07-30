@@ -34,4 +34,4 @@ function vowelsToUppercase(string) {
 function createNewFileName(filename) {
 	var extension = path.extname(filename);
 	return filename.replace(extension, 'UpperCase' + extension);
-}
+}	
