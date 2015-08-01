@@ -102,11 +102,14 @@ var curFilename;
 
 for (var i = 0; i < filenames.length; i++) {
 	curFilename = filenames[i];
+	console.log(1);
 	fs.readFile(curFilename, 'UTF8', createReadFunction(i));
 };
 
 function createReadFunction(pos) {
+	console.log(2)
 	return function(err, data) {
+		console.log(3);
 		processed++;
 		if (err) {
 			console.log(err);
@@ -120,12 +123,6 @@ function createReadFunction(pos) {
 		}
 	}
 }
-
-
-
-
-
-
 
 
 
