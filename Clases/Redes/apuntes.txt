@@ -1,0 +1,23 @@
+- 127.0.0.1 -> la PC local
+- localhost
+- Puedo usar cualquier puerto, pero menores a 1024 necesitan permiso de admin.
+- 80 -> Puerto default HTTP
+- 443 -> Puerto default HTTPS
+
+#HTTP
+## Verbos
+- GET
+- POST
+- PUT
+- UPDATE
+- etc
+## Cada request tiene un method, un status code, un tipo de contenido, un tiempo y más cosas sobre performance.
+## Status codes, recibir una respuesta pase lo que pase
+- 200 -> OK
+- 201 -> Contenido creado
+-etc
+- 30X -> Redirecciones
+- 400 -> bad request
+- 401 -> not found
+- 500 -> internal server error
+- 501 -> 
