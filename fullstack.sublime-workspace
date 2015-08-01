@@ -1,0 +1,644 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"file",
+				"fileContents"
+			],
+			[
+				"fi",
+				"fileContents"
+			],
+			[
+				"pro",
+				"processed"
+			],
+			[
+				"dir",
+				"dirContents"
+			],
+			[
+				"fil",
+				"filesContent"
+			],
+			[
+				"proces",
+				"processed"
+			],
+			[
+				"create",
+				"createRedHandler"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"two",
+				"two"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"ope",
+				"operations"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"inver",
+				"invertirArr"
+			],
+			[
+				"ca",
+				"cadena"
+			],
+			[
+				"cadena",
+				"cadenaInvertida"
+			],
+			[
+				"cade",
+				"cadenaInvertida"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"backgrou",
+				"background-origin"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"cu",
+				"current_path"
+			],
+			[
+				"re",
+				"redirect"
+			],
+			[
+				"co",
+				"common"
+			],
+			[
+				"err",
+				"errfcb"
+			],
+			[
+				"json",
+				"jsonResponse"
+			],
+			[
+				"exe",
+				"executeGetItem"
+			],
+			[
+				"ins",
+				"instagramUser"
+			],
+			[
+				"Item",
+				"ItemPageBusiness"
+			],
+			[
+				"netw",
+				"network"
+			],
+			[
+				"get",
+				"get_network_service_name"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "var fs = require('fs');\nvar filenames = process.argv.slice(2);\nvar fileContents = [];\n\nfor (var i = 0; i < filenames.length; i++) {\n	fs.readFile(filenames[i], 'utf8', function(err, data) {\n		console.log(data);\n	});\n}",
+			"file": "Clases/Node101/nodeOnMyOwn.js",
+			"file_size": 216,
+			"file_write_time": 130824939500000000,
+			"settings":
+			{
+				"buffer_size": 216,
+				"line_ending": "Unix",
+				"name": "var fs = require('fs');"
+			}
+		},
+		{
+			"file": "Clases/Node101/node102.js",
+			"settings":
+			{
+				"buffer_size": 2687,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "TPs/07/vocalesAMayusculas.js",
+			"settings":
+			{
+				"buffer_size": 777,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "TPs/07/lorem.txt",
+			"settings":
+			{
+				"buffer_size": 124,
+				"line_ending": "Unix",
+				"name": "Lorem ipsum dolor sit amet, consectetur adipisicin"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 147.0,
+		"last_filter": "sort",
+		"selected_items":
+		[
+			[
+				"sort",
+				"Sort Lines"
+			]
+		],
+		"width": 430.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/dev/Google Drive/CoderHouse",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouse-JS-Nivelación",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/02",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/05",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/07"
+	],
+	"file_history":
+	[
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/07/vocalesAMayúsculas.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/1.txt",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/node102.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/2.txt",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/3.txt",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/node103.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/node101.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/05/script.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/05/script3.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/05/script2.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/05/index.html",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/04/index.html",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/04/script.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouse-JS-Nivelación/script.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/03/Ejercicio/styles.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/03/Ejercicio/alreves.html",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/03/Ejercicio/float.html",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/03/Ejercicio/position.html",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/03/Ejercicio/flexbox.html",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/03/Ejercicio/float.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/03/styles.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/03/Ejercicio/alreves.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/03/Ejercicio/position.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/03/Ejercicio/flexbox.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/03/index.html",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/02/index.html",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/02/main.css",
+		"/Users/dev/Google Drive/CoderHouse/styles.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/02/readme.md",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/readme.md",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/.gitignore",
+		"/Users/dev/Google Drive/CoderHouse/FSWD/readme.md",
+		"/Users/dev/Google Drive/CoderHouse/FSWD/TP 1 - HTML/TP1-Spinelli/index.html",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouse-JS-Nivelación/script.js",
+		"/Users/dev/code/mobile-webapp-acceptance-tests/app/pages/common/register.js",
+		"/Users/dev/code/mobile-webapp-acceptance-tests/test/spec/users.js",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/controllers/landings.js",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/landings/mobilepromo.html",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/app/views/desktop/landings/winteriscoming.js",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/landings/winteriscoming.html",
+		"/private/etc/hosts",
+		"/Users/dev/code/mobile-webapp/app/controllers/categories.js",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/stylesheets/desktop/landings/winteriscoming.styl",
+		"/Volumes/My Passport/Ana/Mis Documentos/logfile.json",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/landings/asyncbuyer.html",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/stylesheets/desktop/items/partials/filters.styl",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/categories/partials/celebritie.html",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/categories/list.html",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/collections/items.js",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/items/items.html",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/controllers/locations.js",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/common/app/views/landings/winteriscoming.js",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/urls/landings.js",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/common/app/bases/view.js",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/landings/didyousell.html",
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/landings/available.html",
+		"/Users/dev/code/smaug/app/models/ResourceModels.scala",
+		"/Users/dev/code/smaug/app/resources/item/ABLItemResourceProvider.scala",
+		"/Users/dev/code/smaug/app/controllers/ItemsController.scala",
+		"/Users/dev/code/smaug/test/unit/controllers/ItemsControllerSpec.scala",
+		"/Users/dev/.bash_profile",
+		"/Users/dev/code/smaug/test/unit/resources/ABLItemResourceProviderSpec.scala",
+		"/Users/dev/code/mobile-webapp/config/default.yml",
+		"/Users/dev/code/mobile-webapp/app/config/default-development.js",
+		"/Users/dev/code/mobile-webapp/app/config/markets/www.olx.co.za.js",
+		"/Users/dev/code/mobile-webapp/app/localized/default/templates/desktop/post/success.html",
+		"/Users/dev/code/mobile-webapp/app/config/experiments/development.js",
+		"/Users/dev/code/mobile-webapp/server/middleware/sixpack.js",
+		"/Users/dev/code/mobile-webapp/app/localized/default/templates/desktop/pages/help.html",
+		"/Users/dev/Downloads/bash_profile",
+		"/Users/dev/tools/mobile-tools/qa_changer/laptop_test_in.sh",
+		"/Users/dev/bash_profile",
+		"/Users/dev/tools/launchd.conf",
+		"/Users/dev/code/mobile-webapp/app/middlewares/conversations.js",
+		"/Users/dev/code/mobile-webapp/public/images/desktop/raul.jpg",
+		"/private/etc/profile",
+		"/Users/dev/tools/memcached.plist"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/dev/code/mobile-webapp/app/localized/default/templates/desktop",
+			"/Users/dev/code/mobile-webapp"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\\",
+			"path",
+			"',",
+			"console",
+			");\n",
+			");",
+			"};",
+			"run",
+			"windows",
+			"()\n",
+			"argentina",
+			"redi",
+			"img",
+			"instagram",
+			"Item",
+			"user",
+			"def get(",
+			"def get",
+			"get",
+			"user",
+			"notification-message",
+			"test",
+			"networksetup",
+			"networkName",
+			"fi",
+			"service",
+			"thunder",
+			"ethernet",
+			"getcurren",
+			"ethernet",
+			"ether",
+			"Rubin",
+			"Leo",
+			"right",
+			"box-letf",
+			"box-left",
+			"box-right",
+			"right",
+			"leader",
+			"Alec",
+			"&",
+			"Leadership",
+			"wi-fi",
+			"start",
+			"ok",
+			"sudo",
+			"arwen",
+			"start"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"box-left",
+			"ethernet"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Clases/Node101/nodeOnMyOwn.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 216,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								216,
+								216
+							]
+						],
+						"settings":
+						{
+							"auto_name": "var fs = require('fs');",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Clases/Node101/node102.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2516,
+								2516
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1147.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "TPs/07/vocalesAMayusculas.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 777,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								613,
+								613
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "TPs/07/lorem.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 124,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								124
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Lorem ipsum dolor sit amet, consectetur adipisicin",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "fullstack.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ablitemre",
+				"smaug/test/unit/resources/ABLItemResourceProviderSpec.scala"
+			],
+			[
+				"resourcemo",
+				"smaug/app/models/ResourceModels.scala"
+			],
+			[
+				"ablitem",
+				"smaug/app/resources/item/ABLItemResourceProvider.scala"
+			],
+			[
+				"itemscon",
+				"smaug/app/controllers/ItemsController.scala"
+			],
+			[
+				"itemscontrole",
+				"smaug/test/unit/controllers/ItemsControllerSpec.scala"
+			],
+			[
+				"sixpack",
+				"mobile-webapp/server/middleware/sixpack.js"
+			],
+			[
+				"defaultdeve",
+				"mobile-webapp/app/config/default-development.js"
+			],
+			[
+				"default",
+				"mobile-webapp/config/default.yml"
+			],
+			[
+				"marketsolx.co.za",
+				"mobile-webapp/app/config/markets/www.olx.co.za.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 222.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
