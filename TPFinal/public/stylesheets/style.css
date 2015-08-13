@@ -5,6 +5,10 @@ a, a:hover, a:active, a:visited {
 	text-decoration: none;
 }
 
+textarea {
+	resize: vertical;
+}
+
 /*HOME*/
 
 #home-title {
@@ -63,4 +67,16 @@ a.home-post-button {
 .home-body {
 	background-image: url('/images/1.jpg');
 	background-size: 100%;
+}
+
+/*POSTING*/
+.posting-section-title {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 20pt;
+}
+
+#posting-submit {
+	margin-bottom: 50px;
+	margin-top: 20px;
 }
