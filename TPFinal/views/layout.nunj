@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ title }}</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' />
+        <link rel='stylesheet' href='/stylesheets/style.css'/>
+        {% for name in stylesheets %}
+            <link rel="stylesheet" href="/stylesheets/{{ name }}.css">
+        {% endfor %}
+    </head>
+    <body>
+        {% block header %}{% endblock %}
+        <div class="container">
+          {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+/*POSTING*/
+.posting-section-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 20pt;
+}
+
+#posting-submit {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.post-body {
+    /*background-image: url('/images/2.jpg');*/
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: -48.9%;
+    background-attachment: fixed;
+}

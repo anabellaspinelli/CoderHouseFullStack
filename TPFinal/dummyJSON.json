@@ -1,0 +1,52 @@
+//////////////////////
+/*COLLECTION POSTS*/
+
+[
+	{
+		"id": 1,
+		"item": {
+			"title": "Vendo teclado yamaha casi nuevo",
+			"description": "Vendo teclado yamaha casi nuevo. Vendo teclado yamaha casi nuevo. Vendo teclado yamaha casi nuevo.",
+			"price": 123,
+			"images": [
+				{"index": 1, "url": "http://imagenes.com/imagen.jpg"}
+				{"index": 2, "url": "http://imagenes.com/imagen.jpg"}
+				{"index": 3, "url": "http://imagenes.com/imagen.jpg"}
+			]
+		},
+		"contact": {
+			"name": "Roberto",
+			"email": "roberto@gmail.com",
+			"phone": "1234567890",
+			"province": "Buenos Aires",
+			"city": "La Plata"
+		}
+	}
+]
+
+//////////////////////
+/*CATEGORIES COLLECTION*/
+
+[
+		{"id": 1, "name": "pianos"}
+		{"id": 2, "name": "guitars"}
+		{"id": 3, "name": "winds"}
+		{"id": 4, "name": "percussion"}
+]
+
+//////////////////////
+/*LOCATION COLLECTION*/
+
+[
+	{
+		"id": 1,
+		"name": "Buenos Aires", 
+		"cities": [
+			{"id": 1, "name": "La Plata"}
+			{"id": 1, "name": "Mar del Plata"}
+			{"id": 1, "name": "Miramar"}
+			{"id": 1, "name": "Saladillo"}
+			{"id": 1, "name": "Bragado"}
+		]
+	}
+]

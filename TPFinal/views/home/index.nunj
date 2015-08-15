@@ -1,0 +1,21 @@
+{% extends "../layout.nunj" %}
+
+{% block stylesheets %}
+	<link rel='stylesheet' href='stylesheets/home.css'/>
+{% endblock %}
+
+{% block content %}
+	<h1 class="text-center" id="title">{{ title }}</h1>
+	<div class="col-sm-offset-3 col-sm-6">
+	    <form class="form">
+	        <div class="input-group">
+	            <input type="search" placeholder="Buscar instrumentos..." class="form-control" id="search">
+	            <span class="input-group-btn">
+	                <input type="submit" value="Buscar!" class="btn btn-default" id="btn-search">
+	            </span>
+	        </div>
+	    </form>
+	    <p id="o" class="text-center">ó</p>
+	    <a class="text-center post-button" href="/items/post">Publicar un instrumento</a>
+	</div> 
+{% endblock %}
