@@ -1,6 +1,47 @@
 {% extends '../layout-navbar.nunj' %}
 {% block content %}
-    <h6>{{ item.category }}</h6>
-    <h1>{{ item.title }}</h1>
-    <p>{{ item.description }}</p>
+    <h5>{{ item.category }}</h5>
+    <h1 id="title">{{ item.title }}</h1>
+    <div class="row">
+        <div id="item-details">
+            <div class="col-sm-8">
+                <p id="description" class="block">{{ item.description }}</p>
+                <h2 class="text-right class" id="price">$ {{ item.price }}</h2>
+            </div>
+        </div>
+        <div class="col-sm-4 text-right">
+            <div id="contact-info" class="block">
+                <div>
+                    <label for="name">Nombre:</label>
+                    <spam>{{ item.seller.name }}</span>
+                </div>
+                <div>
+                    <label for="name">Teléfono:</label>
+                    <spam>{{ item.seller.phone }}</span>
+                </div>
+                <div>
+                    <label for="name">Ciudad:</label>
+                    <spam>{{ item.seller.city }}</span>
+                </div>
+                <div>
+                    <label for="name">Provincia:</label>
+                    <spam>{{ item.seller.province }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <img src="http://dummyimage.com/300x300/FFE6D1/ff831a" alt="..." class="img-thumbnail">
+        </div>
+        <div class="col-sm-2">
+            <img src="http://dummyimage.com/300x300/FFE6D1/ff831a" alt="..." class="img-thumbnail">
+        </div>
+        <div class="col-sm-2">
+            <img src="http://dummyimage.com/300x300/FFE6D1/ff831a" alt="..." class="img-thumbnail">
+        </div>
+        <div class="col-sm-2">
+            <img src="http://dummyimage.com/300x300/FFE6D1/ff831a" alt="..." class="img-thumbnail">
+        </div>
+    </div>
 {% endblock %}

@@ -11,11 +11,9 @@ var itemModel = {
         });
     },
     get: function(itemId, callback) {
-        console.log('item id is ', itemId);
         
         Mongo.connect(dbURL, function(err, db) {
             db.collection('items').findOne({id: itemId}, function(err, item) {
-                console.log('item is ', item);
                 db.close();
                 callback(err, item);
             });

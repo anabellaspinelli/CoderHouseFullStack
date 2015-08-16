@@ -5,9 +5,16 @@
     font-size: 20pt;
 }
 
+.block {
+    background-color: #FFFADE;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
 #submit {
     margin-bottom: 50px;
-    margin-top: 20px;
 }
 
 body {
