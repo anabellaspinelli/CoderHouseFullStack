@@ -1,9 +1,5 @@
 {% extends "../layout.nunj" %}
 
-{% block stylesheets %}
-	<link rel='stylesheet' href='stylesheets/home.css'/>
-{% endblock %}
-
 {% block content %}
 	<h1 class="text-center" id="title">{{ title }}</h1>
 	<div class="col-sm-offset-3 col-sm-6">
@@ -16,6 +12,6 @@
 	        </div>
 	    </form>
 	    <p id="o" class="text-center">ó</p>
-	    <a class="text-center post-button" href="/items/post">Publicar un instrumento</a>
+	    <a class="text-center post-button" href="/items/publish">Publicar un instrumento</a>
 	</div> 
 {% endblock %}

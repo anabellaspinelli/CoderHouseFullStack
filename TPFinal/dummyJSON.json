@@ -12,14 +12,14 @@
 				{"index": 1, "url": "http://imagenes.com/imagen.jpg"}
 				{"index": 2, "url": "http://imagenes.com/imagen.jpg"}
 				{"index": 3, "url": "http://imagenes.com/imagen.jpg"}
-			]
-		},
-		"contact": {
-			"name": "Roberto",
-			"email": "roberto@gmail.com",
-			"phone": "1234567890",
-			"province": "Buenos Aires",
-			"city": "La Plata"
+			],
+			"seller": {
+				"name": "Roberto",
+				"email": "roberto@gmail.com",
+				"phone": "1234567890",
+				"province": "Buenos Aires",
+				"city": "La Plata"
+			}
 		}
 	}
 ]
