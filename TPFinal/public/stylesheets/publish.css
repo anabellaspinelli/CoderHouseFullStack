@@ -24,3 +24,9 @@ body {
     background-position: -48.9%;
     background-attachment: fixed;
 }
+
+.error {
+    color: #f00;
+    font-weight: 100;
+    font-family: sans-serif;
+}

@@ -11,18 +11,44 @@ $(document).ready(function() {
     var province = $('#province');
     var city = $('#city');
 
-    var validateOptions;
+    var validateOptions = { 
+        rules: {
+            category: {
+                required: true,
+            },
+            title: {
+                required: true,
+                rangelength: [10, 100]
+            },
+            description: {
+                required: true,
+                rangelength: [30, 300]
+            },
+            price: {
+                required: true,
+                number: true,
+                rangelength: [1, 7],
 
-    (function fetchValidationRules() {
-        $.ajax({
-            type: 'GET',
-            url: '/api/items/validations',
-            success: function(data) {
-                validateOptions = JSON.parse(data);
-                console.log(validateOptions);
+            },
+            name: { 
+                required: true,
+                rangelength: [3, 30]
+            },
+            email: {
+                required: true,
+                maxlength: [50]
+            },
+            phone: {
+                number: true
+            },
+            province: {
+                required: true
+            },
+            city: {
+                required: true
             }
-        });
-    })();
+        }
+    };
 
     $('#publish').validate(validateOptions);
 
