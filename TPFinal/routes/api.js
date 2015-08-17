@@ -20,7 +20,7 @@ router.post('/items', function(req, res, next) {
 
         res.json({
             result: item
-        });      
+        });
     });
 });
 

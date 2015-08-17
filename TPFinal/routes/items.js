@@ -19,10 +19,27 @@ router.get('/:id', function(req, res, next) {
             });
         }
 
-        console.log(item);
         res.render('items/item.nunj', {
             item: item,
             stylesheets: ['item']
+        });
+    });
+});
+
+/*GET items by keyword */
+router.get('/search/:keyword', function(req, res, next) {
+    var keyword = req.params.keyword;
+
+    itemModel.search(keyword, function(err, items) {
+        if (err) {
+            console.log(err);
+            return res.render('error.nunj', {
+                message: err.message
+            });
+        }
+
+        res.render('items/listing.nunj', {
+            items: items
         });
     });
 });

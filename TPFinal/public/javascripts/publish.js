@@ -63,7 +63,7 @@ $(document).ready(function() {
             url: '/api/items',
             data: JSON.stringify(item),
             success: function() {
-                console.log('POST success!')
+                console.log('POST success!');
             },
             dataType: 'json',
             contentType: 'application/json',
