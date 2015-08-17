@@ -11,46 +11,46 @@ $(document).ready(function() {
     var province = $('#province');
     var city = $('#city');
 
-    var validateOptions = { 
-        rules: {
-            category: {
-                required: true,
-            },
-            title: {
-                required: true,
-                rangelength: [10, 100]
-            },
-            description: {
-                required: true,
-                rangelength: [30, 300]
-            },
-            price: {
-                required: true,
-                number: true,
-                rangelength: [1, 7],
+    var validationRules = {
+        category: {
+            required: true,
+        },
+        title: {
+            required: true,
+            rangelength: [10, 100]
+        },
+        description: {
+            required: true,
+            rangelength: [30, 300]
+        },
+        price: {
+            required: true,
+            number: true,
+            rangelength: [1, 7],
 
-            },
-            name: { 
-                required: true,
-                rangelength: [3, 30]
-            },
-            email: {
-                required: true,
-                maxlength: [50]
-            },
-            phone: {
-                number: true
-            },
-            province: {
-                required: true
-            },
-            city: {
-                required: true
-            }
+        },
+        name: {
+            required: true,
+            rangelength: [3, 30]
+        },
+        email: {
+            required: true,
+            maxlength: [50]
+        },
+        phone: {
+            number: true
+        },
+        province: {
+            required: true
+        },
+        city: {
+            required: true
         }
     };
 
-    $('#publish').validate(validateOptions);
+    $('#publish').validate({
+        rules: validationRules
+    });
 
     $('#publish').on('submit', function(e) {
         var item;
@@ -68,7 +68,7 @@ $(document).ready(function() {
             dataType: 'json',
             contentType: 'application/json',
         });
-    });    
+    });
 
     function extractItemFromForm() {
         return {
@@ -77,7 +77,7 @@ $(document).ready(function() {
             description: description.val(),
             price: price.val(),
             currency: currency.val(),
-            seller: {            
+            seller: {
                 name: name.val(),
                 email: email.val(),
                 phone: phone.val(),

@@ -116,6 +116,6 @@
                 </div>
             </div>
         </div>
-        <button type="submit" class="btn btn-lg btn-warning col-sm-6 col-sm-offset-3" id="submit">Publicar!</button>
+        <input type="submit" class="btn btn-lg btn-warning col-sm-6 col-sm-offset-3" id="submit" value="Publicar!">
     </form>
 {% endblock %}
