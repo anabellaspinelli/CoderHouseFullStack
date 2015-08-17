@@ -3,9 +3,9 @@
 {% block content %}
 	<h1 class="text-center" id="title">{{ title }}</h1>
 	<div class="col-sm-offset-3 col-sm-6">
-	    <form class="form">
+	    <form class="form search">
 	        <div class="input-group">
-	            <input type="search" placeholder="Buscar instrumentos..." class="form-control" id="search">
+	            <input type="search" placeholder="Buscar instrumentos..." class="form-control txt-search" id="big-search">
 	            <span class="input-group-btn">
 	                <input type="submit" value="Buscar!" class="btn btn-default" id="btn-search">
 	            </span>

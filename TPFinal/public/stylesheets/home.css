@@ -9,17 +9,17 @@
 	text-shadow: 1px 1px 50px #FFEF93;
 }
 
-#search {
+#big-search {
 	padding: 30px;
 	font-size: 15pt;
 }
 
-#search:focus { 
+#big-search:focus { 
 	border-color: #FF9338;
 	box-shadow: none;
 }
 
-#search + span > input {
+#big-search + span > input {
 	padding: 19px;
 	background-color: #FF831A;
 	border: 1px solid #FF9338;
@@ -27,7 +27,7 @@
 	font-size: 12pt;
 }
 
-#search + span > input:hover {
+#big-search + span > input:hover {
 	background-color: #FF9032;
 }
 
