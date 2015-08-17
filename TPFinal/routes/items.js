@@ -4,9 +4,10 @@ var itemModel = require('../models/item');
 
 /* GET Publish page. */
 router.get('/publish', function(req, res, next) {	
-    res.render('items/publish.nunj', {stylesheets: ['publish'], scripts: ['publish']});
+    res.render('items/publish.nunj', {stylesheets: ['publish'], scripts: ['jquery.validate', 'publish']});
 });
 
+/*GET item page by ID*/
 router.get('/:id', function(req, res, next) {
     var itemId = Number(req.params.id);
 

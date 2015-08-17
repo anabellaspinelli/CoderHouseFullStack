@@ -9,8 +9,8 @@
             <div class="form-group">
                 <label for="category" class="col-sm-3 control-label">Categoría</label>
                 <div class="col-sm-6">
-                    <select class="form-control" id="category">
-                        <option></option>
+                    <select class="form-control" id="category" required>
+                        <option value=""></option>
                         <option>Guitarras</option>
                         <option>Bajos</option>
                         <option>Teclados/Sintes</option>    
@@ -27,13 +27,13 @@
             <div class="form-group">
                 <label for="title" class="col-sm-3 control-label">Título</label>
                 <div class="col-sm-6">
-                    <input type="text" class="form-control" id="title" placeholder="El título de tu anuncio">
+                    <input type="text" class="form-control" id="title" placeholder="El título de tu anuncio" name="title">
                 </div>
             </div>
             <div class="form-group">
                 <label for="description" class="col-sm-3 control-label">Descripción</label>
                 <div class="col-sm-6">
-                    <textarea class="form-control" id="description" placeholder="La descripción de tu anuncio" resize="vertical" rows="5"></textarea>
+                    <textarea class="form-control" id="description" placeholder="La descripción de tu anuncio" resize="vertical" rows="5" name="description"></textarea>
                 </div>
             </div>
             <div class="form-group">
@@ -56,7 +56,7 @@
             <div class="form-group">
                 <label for="price" class="col-sm-3 control-label">Precio</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control" id="price" placeholder="Precio">
+                    <input type="text" class="form-control" id="price" placeholder="Precio" name="price">
                 </div>
                 <label for="currency" class="col-sm-1 control-label">Moneda</label>
                 <div class="col-sm-2">
@@ -72,28 +72,24 @@
             <div class="form-group">
                 <label for="name" class="col-sm-3 control-label">Nombre*</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control" id="name">
+                    <input type="text" class="form-control" id="name" name="name">
                 </div>
                 <label for="email" class="col-sm-1 control-label">E-mail*</label>
                 <div class="col-sm-3">
-                    <input type="email" class="form-control" id="email">
+                    <input type="email" class="form-control" id="email" name="email">
                 </div>
             </div>
             <div class="form-group">
                 <label for="phone" class="col-sm-3 control-label">Teléfono</label>
                 <div class="col-sm-2">
-                    <input type="phone" class="form-control" id="phone">
-                </div>
-                <label for="cellphone" class="col-sm-1 control-label">Celular</label>
-                <div class="col-sm-2">
-                    <input type="phone" class="form-control" id="cellphone">
+                    <input type="text" class="form-control" id="phone">
                 </div>
             </div>
             <div class="form-group">
                 <label for="province" class="col-sm-3 control-label">Provincia</label>
                 <div class="col-sm-2">
-                    <select class="form-control" id="province">
-                        <option></option>
+                    <select class="form-control" id="province" required>
+                        <option value=""></option>
                         <option>Provinciah</option>
                         <option>Provinciah</option>
                         <option>Provinciah</option>
@@ -106,8 +102,8 @@
                 </div>
                 <label for="city" class="col-sm-1 control-label">Ciudad</label>
                 <div class="col-sm-3">
-                    <select class="form-control" id="city">
-                        <option></option>
+                    <select class="form-control" id="city" required>
+                        <option value=""></option>
                         <option>Ciudadd</option>
                         <option>Ciudadd</option>
                         <option>Ciudadd</option>
@@ -118,8 +114,6 @@
                         <option>Ciudadd</option>
                     </select>
                 </div>
-            </div>
-            <div class="form-group">
             </div>
         </div>
         <button type="submit" class="btn btn-lg btn-warning col-sm-6 col-sm-offset-3" id="submit">Publicar!</button>

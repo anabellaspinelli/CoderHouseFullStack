@@ -11,13 +11,26 @@ $(document).ready(function() {
     var province = $('#province');
     var city = $('#city');
 
+    var validateOptions;
+
+    (function fetchValidationRules() {
+        $.ajax({
+            type: 'GET',
+            url: '/api/items/validations',
+            success: function(data) {
+                validateOptions = JSON.parse(data);
+                console.log(validateOptions);
+            }
+        });
+    })();
+
+    $('#publish').validate(validateOptions);
+
     $('#publish').on('submit', function(e) {
         var item;
 
         e.preventDefault();
         item = extractItemFromForm();
-
-        /*TO-DO VALIDATE DATA*/
 
         $.ajax({
             type: 'POST',
@@ -47,14 +60,4 @@ $(document).ready(function() {
             }
         }
     }
-
-/*    function validateData(data) {
-        return (
-            data.category !== '' &&
-            data.title.length > 10 &&
-            data.description > 30 &&
-            (parseInt(data.price) !== NaN && data.price !== '0') &&
-            data.currency !=== '' &&,
-        )
-    }*/
 });
