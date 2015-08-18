@@ -1,7 +1,11 @@
 {% extends '../layout-navbar.nunj' %}
 {% block content %}
     {% for item in items %}
-        <h3 class="item-title">{{ item.title }}</h3>
-        <p class="item-description">{{ item.description.substring(0,100) }}</p>
+    <a href="/items/{{ item._id }}">    
+        <div class="item">        
+            <h3 class="item-title">{{ item.title }}</h3>
+            <p class="item-description">{{ item.description.substring(0,100) }}</p>
+        </div>
+    </a>
     {% endfor %}
 {% endblock %}
