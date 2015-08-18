@@ -11,6 +11,7 @@
     padding: 20px;
     font-size: 12pt;
     min-height: 208px;
+    overflow-wrap: break-word;
 }
 
 #contact-info {
@@ -24,5 +25,14 @@
     font-size: 40pt;
     background-color: #FFFADE;
     padding: 15px;
+    margin-bottom: 20px;
+}
+
+#success {
+    background-color: #E4FFDE;
+    margin-bottom: 20px;
+}
+
+#success > h2 {
     margin-bottom: 20px;
 }

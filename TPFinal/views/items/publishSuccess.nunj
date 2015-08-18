@@ -1,0 +1,7 @@
+{% extends './item.nunj' %}
+
+{% block success %}
+    <div id="success" class="col-sm-12">
+        <h2>Gracias! Tu instrumento ya se publicó!</h2>
+    </div>
+{% endblock %}

@@ -1,5 +1,8 @@
 {% extends '../layout-navbar.nunj' %}
+
 {% block content %}
+    {% block success%}
+    {% endblock %}
     <h5>{{ item.category }}</h5>
     <h1 id="title">{{ item.title }}</h1>
     <div class="row">

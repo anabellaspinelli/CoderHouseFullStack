@@ -1,12 +1,31 @@
 var express = require('express');
 var router = express.Router();
 var itemModel = require('../models/item');
+var qs = require('querystring');
 
 /* GET Publish page. */
 router.get('/publish', function(req, res, next) {
     res.render('items/publish.nunj', {
         stylesheets: ['publish'],
         scripts: ['jquery.validate', 'publish']
+    });
+});
+
+router.get('/publish/success/:itemId', function(req, res, next) {
+    var itemId = req.url.slice(req.url.indexOf('iid-') + 4);
+
+    itemModel.get(itemId, function(err, item) {
+        if (err) {
+            console.log(err);
+            return res.render('error.nunj', {
+                message: err.message
+            });
+        }
+
+        res.render('items/publishSuccess.nunj', {
+            item: item,
+            stylesheets: ['item']
+        });
     });
 });
 
@@ -77,5 +96,6 @@ router.get('/all', function(req, res, next) {
         }
     });
 });
+
 
 module.exports = router;

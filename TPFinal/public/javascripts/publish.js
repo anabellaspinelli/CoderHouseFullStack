@@ -63,10 +63,12 @@ $(document).ready(function() {
             url: '/api/items',
             data: JSON.stringify(item),
             success: function(data) {
+                console.log(data);
                 if (data.error) {
                     showServerValidations(data);
                 } else {
                     console.log('POST success!');
+                    window.location.href = '/items/publish/success/iid-' + data.result._id
                 }
             },
             dataType: 'json',
@@ -79,7 +81,7 @@ $(document).ready(function() {
             category: category.val(),
             title: title.val(),
             description: description.val(),
-            price: price.val(),
+            price: Number(price.val()),
             currency: currency.val(),
             seller: {
                 name: name.val(),
