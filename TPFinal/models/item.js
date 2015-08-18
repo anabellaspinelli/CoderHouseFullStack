@@ -29,11 +29,11 @@ var itemModel = {
         Mongo.connect(dbURL, function(err, db) {
             var cursor = db.collection('items').find({
                 description: {
-                    $regex: keyword,
+                    $regex: keyword || '',
                     $options: "i"
                 },
                 title: {
-                    $regex: keyword,
+                    $regex: keyword || '',
                     $options: "i"
                 }
             });
