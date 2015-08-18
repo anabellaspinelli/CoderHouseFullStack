@@ -43,7 +43,8 @@ router.get('/search/:keyword', function(req, res, next) {
 
         if (items.length > 0) {
             res.render('items/listing.nunj', {
-                items: items
+                items: items,
+                stylesheets: ['listing']
             });
         } else {
             res.render('error.nunj', {

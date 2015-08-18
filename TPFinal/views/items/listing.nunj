@@ -1,11 +1,25 @@
 {% extends '../layout-navbar.nunj' %}
 {% block content %}
     {% for item in items %}
-    <a href="/items/{{ item._id }}">    
-        <div class="item">        
-            <h3 class="item-title">{{ item.title }}</h3>
-            <p class="item-description">{{ item.description.substring(0,100) }}</p>
-        </div>
-    </a>
+    <div class="row">     
+        <a href="/items/{{ item._id }}">    
+            <div class="item col-sm-8 col-sm-offset-2">        
+                <div class="col-sm-3">
+                    <img src="{{ item.images[0].url }}" alt="..." class="img-thumbnail">
+                </div>
+                <div class="col-sm-9">                
+                    <h3 class="item-title">{{ item.title }}</h3>
+                    <p class="item-description">{{ item.description.substring(0,100) }}</p>
+                    <div class="text-left">
+                        <label for="city">Ciudad:</label>
+                        <span name="city">{{ item.seller.city }}</span>
+                        <label for="province">Provincia:</label>
+                        <span name="city">{{ item.seller.province }}</span>
+                    </div>
+                    <h3 class= "text-right">$ {{ item.price }}</h3>
+                </div>
+            </div>
+        </a>
+    </div>
     {% endfor %}
 {% endblock %}

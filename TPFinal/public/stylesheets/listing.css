@@ -1,0 +1,21 @@
+.item { 
+    background-color: #FFD7B6;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    -webkit-transition: background-color 0.3s; 
+    -moz-transition: background-color 0.3s; 
+    transition: background-color 0.3s; 
+    -o-transition: background-color 0.3s; 
+}
+
+.item:hover {
+    background-color: #FFE6D1;
+}
+
+.item-description {
+    font-size: 12pt;
+}
+
+.img-thumbnail {
+    margin-top: 15px;
+}
