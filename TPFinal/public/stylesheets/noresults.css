@@ -1,0 +1,26 @@
+.container form.search {
+    margin-top: 50px;
+}
+
+#big-search {
+    padding: 30px;
+    font-size: 15pt;
+}
+
+#big-search:focus { 
+    border-color: #FF9338;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+#big-search + span > input {
+    padding: 19px;
+    background-color: #FF831A;
+    border: 1px solid #FF9338;
+    color: #FFEF93;
+    font-size: 12pt;
+}
+
+#big-search + span > input:hover {
+    background-color: #FF9032;
+}

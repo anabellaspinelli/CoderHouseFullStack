@@ -17,6 +17,7 @@
 #big-search:focus { 
 	border-color: #FF9338;
 	box-shadow: none;
+	text-decoration: none;
 }
 
 #big-search + span > input {

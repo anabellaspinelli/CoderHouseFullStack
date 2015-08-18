@@ -14,7 +14,7 @@ router.get('/publish', function(req, res, next) {
 router.get('/publish/success/:itemId', function(req, res, next) {
     var itemId = req.url.slice(req.url.indexOf('iid-') + 4);
 
-    getAndRenderItem(itemId, 'publishSuccess', res)
+    getAndRenderItem(itemId, 'publishsuccess', res)
 });
 
 /*GET item page by ID*/
@@ -42,8 +42,8 @@ router.get('/search/:keyword', function(req, res, next) {
                 stylesheets: ['listing']
             });
         } else {
-            res.render('error.nunj', {
-                message: 'Error: No items found'
+            res.render('items/noresults.nunj', {
+                stylesheets: ['noresults']
             });
         }
 

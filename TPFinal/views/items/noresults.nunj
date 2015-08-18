@@ -1,0 +1,16 @@
+{% extends '../layout-navbar.nunj' %}
+{% block content %}
+    <h1>No se encontraron resultados :(</h1>
+    <h2>Probá buscando por un término más amplio</h2>
+    <h3>(o con una sola palabra, porque por ahora la búsqueda sólo soporta una sola keyword :S )</h3>
+    <div class="col-sm-offset-3 col-sm-6">        
+        <form class="form search" action="/search" method="POST">
+            <div class="input-group">
+                <input type="search" placeholder="Buscar instrumentos..." class="form-control txt-search" id="big-search" name="keyword" required>
+                <span class="input-group-btn">
+                    <input type="submit" value="Buscar!" class="btn btn-default" id="btn-search">
+                </span>
+            </div>
+        </form>
+    </div>
+{% endblock %}
