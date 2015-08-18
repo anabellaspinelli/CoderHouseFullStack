@@ -11,7 +11,7 @@ router.get('/publish', function(req, res, next) {
 });
 
 /*GET item page by ID*/
-router.get('/:id', function(req, res, next) {
+router.get('/iid-:id', function(req, res, next) {
     var itemId = req.params.id;
 
     itemModel.get(itemId, function(err, item) {
@@ -29,7 +29,7 @@ router.get('/:id', function(req, res, next) {
     });
 });
 
-/*GET items by keyword */
+/* GET items by keyword */
 router.get('/search/:keyword', function(req, res, next) {
     var keyword = req.params.keyword;
 
@@ -52,6 +52,29 @@ router.get('/search/:keyword', function(req, res, next) {
             });
         }
 
+    });
+});
+
+/* GET ALL items */
+router.get('/all', function(req, res, next) {
+
+    itemModel.getAll(function(err, items) {
+        if (err) {
+            console.log(err);
+            return res.render('error.nunj', {
+                message: err.message
+            });
+        }
+        if (items.length > 0) {
+            res.render('items/listing.nunj', {
+                items: items,
+                stylesheets: ['listing']
+            });
+        } else {
+            res.render('error.nunj', {
+                message: 'Error: No items found'
+            });
+        }
     });
 });
 

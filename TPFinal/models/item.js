@@ -50,6 +50,26 @@ var itemModel = {
                 db.close();
             });
         });
+    },
+    getAll: function(callback) {
+        var items = [];
+
+        Mongo.connect(dbURL, function(err, db) {
+            var cursor = db.collection('items').find({});
+
+            cursor.on('data', function(doc) {
+                items.push(doc);
+            });
+
+            cursor.on('error', function(err) {
+                console.log(err);
+            });
+
+            cursor.on('end', function() {
+                callback(err, items);
+                db.close();
+            });
+        });
     }
 };
 
