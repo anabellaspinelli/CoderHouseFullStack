@@ -1,4 +1,5 @@
 var Mongo = require('mongodb').MongoClient;
+var ObjectID = require('mongodb').ObjectID;
 var dbURL = 'mongodb://localhost:27017/instroo';
 
 var itemModel = {
@@ -11,10 +12,11 @@ var itemModel = {
         });
     },
     get: function(itemId, callback) {
+        console.log(itemId);
 
         Mongo.connect(dbURL, function(err, db) {
             db.collection('items').findOne({
-                id: itemId
+                _id: ObjectID(itemId)
             }, function(err, item) {
                 db.close();
                 callback(err, item);

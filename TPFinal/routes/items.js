@@ -12,7 +12,7 @@ router.get('/publish', function(req, res, next) {
 
 /*GET item page by ID*/
 router.get('/:id', function(req, res, next) {
-    var itemId = Number(req.params.id);
+    var itemId = req.params.id;
 
     itemModel.get(itemId, function(err, item) {
         if (err) {
