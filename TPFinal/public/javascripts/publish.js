@@ -62,8 +62,12 @@ $(document).ready(function() {
             type: 'POST',
             url: '/api/items',
             data: JSON.stringify(item),
-            success: function() {
-                console.log('POST success!');
+            success: function(data) {
+                if (data.error) {
+                    showServerValidations(data);
+                } else {
+                    console.log('POST success!');
+                }
             },
             dataType: 'json',
             contentType: 'application/json',
@@ -85,5 +89,14 @@ $(document).ready(function() {
                 city: city.val()
             }
         }
+    }
+
+    function showServerValidations(data) {
+        $('#errors > ul').empty();
+        data.error.forEach(function(error) {
+            $('#errors > ul').append($('<li>', {
+                text: error.message
+            }));
+        });
     }
 });

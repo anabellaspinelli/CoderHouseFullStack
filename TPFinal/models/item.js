@@ -70,6 +70,27 @@ var itemModel = {
                 db.close();
             });
         });
+    },
+
+    validations: {
+        schema: {
+            category: 'required',
+            title: 'required|min:10|max:100',
+            description: 'required|min:30|max:300',
+            price: 'required|number|max:7',
+            currency: 'required',
+            seller: {
+                name: 'required|min:3|max:30',
+                email: 'required|email',
+                province: 'required',
+                city: 'required'
+            }
+        },
+        messages: {
+            required: 'Por favor ingresá {{ field }}',
+            email: 'Por favor ingresá un email válido',
+            number: 'Por favor ingresá sólo números en {{ field }}'
+        }
     }
 };
 

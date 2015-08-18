@@ -1,31 +1,27 @@
 var express = require('express');
 var router = express.Router();
+var Indicative = new(require("indicative"));
 
 var itemModel = require('../models/item');
 
 router.post('/items', function(req, res, next) {
     var item = req.body;
+    var schema = itemModel.validations.schema;
+    var errorMessages = itemModel.validations.messages;
 
-    validateItemData(item);
-
-    itemModel.insert(item, function(err) {
-        if (err) {
-            console.log(err);
-            return res.json({
-                error: {
-                    message: err.message
-                }
+    Indicative.validate(schema, item, errorMessages).then(function (validation_passed) {
+        itemModel.insert(item, function() {
+            res.json({
+                result: item
             });
-        }
-
+        });
+    }).catch(function (err) {
+        console.log(err);
         res.json({
-            result: item
+            error: err
         });
     });
-});
 
-function validateItemData(body) {
-    console.log(body);
-}
+});
 
 module.exports = router;

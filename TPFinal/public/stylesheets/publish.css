@@ -30,3 +30,7 @@ body {
     font-weight: 100;
     font-family: sans-serif;
 }
+
+#errors {
+    color: #f00;
+}
