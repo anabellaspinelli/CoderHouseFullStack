@@ -24,11 +24,4 @@ router.post('/items', function(req, res, next) {
     });
 });
 
-/*SEARCH Redirect*/
-router.get('/search', function(req, res, next) {
-    var reqQs = qs.parse(req.url.slice(req.url.indexOf('?') + 1));
-
-    res.redirect('/items/search/' + reqQs.keyword);
-});
-
 module.exports = router;

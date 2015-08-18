@@ -10,6 +10,7 @@ var nunjucks = require('nunjucks');
 var homeRoutes = require('./routes/home');
 var itemsRoutes = require('./routes/items');
 var apiRoutes = require('./routes/api');
+var searchRoutes = require('./routes/search');
 
 var app = express();
 
@@ -33,6 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', homeRoutes);
 app.use('/items', itemsRoutes);
 app.use('/api', apiRoutes);
+app.use('/search', searchRoutes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

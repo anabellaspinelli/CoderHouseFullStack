@@ -17,6 +17,5 @@
         {% for name in scripts %}
             <script type="text/javascript" src="/javascripts/{{ name }}.js"></script>
         {% endfor %}
-        <script type="text/javascript" src="/javascripts/search.js"></script>
     </body>
 </html>
