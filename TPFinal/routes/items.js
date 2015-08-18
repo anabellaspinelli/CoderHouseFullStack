@@ -3,8 +3,11 @@ var router = express.Router();
 var itemModel = require('../models/item');
 
 /* GET Publish page. */
-router.get('/publish', function(req, res, next) {	
-    res.render('items/publish.nunj', {stylesheets: ['publish'], scripts: ['jquery.validate', 'publish']});
+router.get('/publish', function(req, res, next) {
+    res.render('items/publish.nunj', {
+        stylesheets: ['publish'],
+        scripts: ['jquery.validate', 'publish']
+    });
 });
 
 /*GET item page by ID*/
@@ -38,9 +41,16 @@ router.get('/search/:keyword', function(req, res, next) {
             });
         }
 
-        res.render('items/listing.nunj', {
-            items: items
-        });
+        if (items.length > 0) {
+            res.render('items/listing.nunj', {
+                items: items
+            });
+        } else {
+            res.render('error.nunj', {
+                message: 'Error: No items found'
+            });
+        }
+
     });
 });
 

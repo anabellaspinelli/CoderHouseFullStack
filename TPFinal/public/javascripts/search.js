@@ -5,11 +5,7 @@ $(document).ready(function() {
         e.preventDefault();
 
         searchTerm = $('.txt-search').val().split(' ').join('+');
-        $.ajax({
-            type: 'GET',
-            url: '/items/search/' + searchTerm,
-            dataType: 'json',
-            contentType: 'application/json',
-        })
+
+        window.location.href = 'http://localhost:3000/items/search/' + searchTerm;
     });
 });
