@@ -27,7 +27,7 @@ var itemModel = {
         Mongo.connect(dbURL, function(err, db) {
             var cursor = db.collection('items').find({
                 description: {
-                    $regex: 'teclado|casio' ,
+                    $regex: keyword,
                     $options: "i"
                 },
                 title: {
