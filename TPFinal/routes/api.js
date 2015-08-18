@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Indicative = new(require("indicative"));
+var qs = require('querystring');
 
 var itemModel = require('../models/item');
 
@@ -21,7 +22,13 @@ router.post('/items', function(req, res, next) {
             error: err
         });
     });
+});
 
+/*SEARCH Redirect*/
+router.get('/search', function(req, res, next) {
+    var reqQs = qs.parse(req.url.slice(req.url.indexOf('?') + 1));
+
+    res.redirect('/items/search/' + reqQs.keyword);
 });
 
 module.exports = router;

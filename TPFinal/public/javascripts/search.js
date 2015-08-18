@@ -6,6 +6,9 @@ $(document).ready(function() {
 
         searchTerm = $('.txt-search').val().split(' ').join('+');
 
-        window.location.href = '/items/search/' + searchTerm;
+        $.ajax({
+            type: 'GET',
+            url: '/api/search?keyword=' + searchTerm
+        })
     });
 });
