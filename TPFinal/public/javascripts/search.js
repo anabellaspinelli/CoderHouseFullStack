@@ -6,6 +6,6 @@ $(document).ready(function() {
 
         searchTerm = $('.txt-search').val().split(' ').join('+');
 
-        window.location.href = 'http://localhost:3000/items/search/' + searchTerm;
+        window.location.href = '/items/search/' + searchTerm;
     });
 });
