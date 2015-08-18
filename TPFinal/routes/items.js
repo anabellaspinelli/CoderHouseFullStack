@@ -14,38 +14,14 @@ router.get('/publish', function(req, res, next) {
 router.get('/publish/success/:itemId', function(req, res, next) {
     var itemId = req.url.slice(req.url.indexOf('iid-') + 4);
 
-    itemModel.get(itemId, function(err, item) {
-        if (err) {
-            console.log(err);
-            return res.render('error.nunj', {
-                message: err.message
-            });
-        }
-
-        res.render('items/publishSuccess.nunj', {
-            item: item,
-            stylesheets: ['item']
-        });
-    });
+    getAndRenderItem(itemId, 'publishSuccess', res)
 });
 
 /*GET item page by ID*/
 router.get('/iid-:id', function(req, res, next) {
     var itemId = req.params.id;
 
-    itemModel.get(itemId, function(err, item) {
-        if (err) {
-            console.log(err);
-            return res.render('error.nunj', {
-                message: err.message
-            });
-        }
-
-        res.render('items/item.nunj', {
-            item: item,
-            stylesheets: ['item']
-        });
-    });
+    getAndRenderItem(itemId, 'item', res)
 });
 
 /* GET items by keyword */
@@ -96,6 +72,22 @@ router.get('/all', function(req, res, next) {
         }
     });
 });
+
+function getAndRenderItem(itemId, template, res) {
+    itemModel.get(itemId, function(err, item) {
+        if (err) {
+            console.log(err);
+            return res.render('error.nunj', {
+                message: err.message
+            });
+        }
+
+        res.render('items/' + template + '.nunj', {
+            item: item,
+            stylesheets: ['item']
+        });
+    });
+}
 
 
 module.exports = router;
