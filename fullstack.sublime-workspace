@@ -4,6 +4,226 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"erro",
+				"errorMessage"
+			],
+			[
+				"express",
+				"expressValidator"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"sear",
+				"searchTerm"
+			],
+			[
+				"validate",
+				"validateOptions"
+			],
+			[
+				"va",
+				"validateOptions"
+			],
+			[
+				"pro",
+				"province"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"data",
+				"data"
+			],
+			[
+				"price",
+				"price"
+			],
+			[
+				"get",
+				"getFormValues"
+			],
+			[
+				"backgroun",
+				"background-position"
+			],
+			[
+				"bak",
+				"background-image"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"st",
+				"starttime"
+			],
+			[
+				"end",
+				"endElem"
+			],
+			[
+				"pre",
+				"preFillToday"
+			],
+			[
+				"date",
+				"dateString"
+			],
+			[
+				"sta",
+				"startElem"
+			],
+			[
+				"current",
+				"currentDay"
+			],
+			[
+				"cur",
+				"currentDate"
+			],
+			[
+				"curre",
+				"currentDay"
+			],
+			[
+				"spin",
+				"spinnerElem"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"stat",
+				"statusCode"
+			],
+			[
+				"queryS",
+				"queryString"
+			],
+			[
+				"start",
+				"starttime"
+			],
+			[
+				"fet",
+				"fetchURL"
+			],
+			[
+				"err",
+				"errorElemDisplayProp"
+			],
+			[
+				"fee",
+				"feedParams"
+			],
+			[
+				"fe",
+				"fetchTweets"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"tweet",
+				"tweetContent"
+			],
+			[
+				"twee",
+				"tweetContent"
+			],
+			[
+				"sea",
+				"searchContainer"
+			],
+			[
+				"feed",
+				"feed"
+			],
+			[
+				"fetch",
+				"fetchParams"
+			],
+			[
+				"searc",
+				"searchContainer"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"use",
+				"username"
+			],
+			[
+				"search",
+				"searchUsers"
+			],
+			[
+				"fil",
+				"filteredTweets"
+			],
+			[
+				"tim",
+				"timestamp"
+			],
+			[
+				"user",
+				"userTweet"
+			],
+			[
 				"file",
 				"fileContents"
 			],
@@ -12,16 +232,8 @@
 				"fileContents"
 			],
 			[
-				"pro",
-				"processed"
-			],
-			[
 				"dir",
 				"dirContents"
-			],
-			[
-				"fil",
-				"filesContent"
 			],
 			[
 				"proces",
@@ -72,28 +284,8 @@
 				"padding"
 			],
 			[
-				"ma",
-				"margin-top"
-			],
-			[
-				"margin",
-				"margin-left"
-			],
-			[
-				"padd",
-				"padding-top"
-			],
-			[
 				"min",
 				"min-height"
-			],
-			[
-				"back",
-				"background-color"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"borde",
@@ -120,10 +312,6 @@
 				"common"
 			],
 			[
-				"err",
-				"errfcb"
-			],
-			[
 				"json",
 				"jsonResponse"
 			],
@@ -142,50 +330,81 @@
 			[
 				"netw",
 				"network"
-			],
-			[
-				"get",
-				"get_network_service_name"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "var fs = require('fs');\nvar filenames = process.argv.slice(2);\nvar fileContents = [];\n\nfor (var i = 0; i < filenames.length; i++) {\n	fs.readFile(filenames[i], 'utf8', function(err, data) {\n		console.log(data);\n	});\n}",
-			"file": "Clases/Node101/nodeOnMyOwn.js",
-			"file_size": 216,
-			"file_write_time": 130824939500000000,
+			"file": "TPFinal/models/item.js",
 			"settings":
 			{
-				"buffer_size": 216,
-				"line_ending": "Unix",
-				"name": "var fs = require('fs');"
-			}
-		},
-		{
-			"file": "Clases/Node101/node102.js",
-			"settings":
-			{
-				"buffer_size": 2687,
+				"buffer_size": 2713,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "TPs/07/vocalesAMayusculas.js",
+			"file": "TPFinal/routes/items.js",
 			"settings":
 			{
-				"buffer_size": 777,
+				"buffer_size": 2335,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "TPs/07/lorem.txt",
+			"file": "TPFinal/views/items/listing.nunj",
 			"settings":
 			{
-				"buffer_size": 124,
-				"line_ending": "Unix",
-				"name": "Lorem ipsum dolor sit amet, consectetur adipisicin"
+				"buffer_size": 1096,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "TPFinal/views/items/noresults.nunj",
+			"settings":
+			{
+				"buffer_size": 790,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "TPFinal/views/layout.nunj",
+			"settings":
+			{
+				"buffer_size": 788,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "TPFinal/public/stylesheets/home.css",
+			"settings":
+			{
+				"buffer_size": 841,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "TPFinal/public/stylesheets/noresults.css",
+			"settings":
+			{
+				"buffer_size": 428,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "TPFinal/views/home/index.nunj",
+			"settings":
+			{
+				"buffer_size": 730,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "TPFinal/public/javascripts/publish.js",
+			"settings":
+			{
+				"buffer_size": 2597,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -196,16 +415,24 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 147.0,
-		"last_filter": "sort",
+		"height": 167.0,
+		"last_filter": "settings",
 		"selected_items":
 		[
+			[
+				"settings",
+				"Preferences: Settings - Default"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"sort",
 				"Sort Lines"
 			]
 		],
-		"width": 430.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -230,17 +457,100 @@
 		"/Users/dev/Google Drive/CoderHouse/CoderHouse-JS-Nivelación",
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack",
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases",
-		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101",
-		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs",
-		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/02",
-		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/05",
-		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/07"
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Express",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/public",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/public/javascripts",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/public/stylesheets",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/routes",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/home",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/items"
 	],
 	"file_history":
 	[
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/error.nunj",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/items/publish.nunj",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/items/item.nunj",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/routes/search.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/public/stylesheets/item.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/items/publishSuccess.nunj",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/models/item.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/public/javascripts/publish.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/routes/items.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/routes/api.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/08/servicio-graficar/public/js/index.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/app.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/routes/home.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/layout.nunj",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/layout-navbar.nunj",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/home/index.nunj",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/public/javascripts/search.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Redes/Twettir/notTwitter/public/js/index.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/08/servicio-graficar/index.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/public/stylesheets/publish.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/items/listing.nunj",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/public/stylesheets/listing.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Express/claseExpress.md",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/public/stylesheets/home.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Redes/twettir.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/MongoDB/index.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/public/javascripts/jquery.validate.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/public/stylesheets/style.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/package.json",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Express/express-example/routes/users.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/MongoDB/usersScript.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/items/details.nunj",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/dummyJSON.json",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Redes/Twettir/notTwitter/index.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/nav.hbs",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/items/post.nunj",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/error.hbs",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/public/stylesheets/post.css",
+		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/dev/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/post.hbs",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/index.hbs",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/routes/post.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/layout.hbs",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/config/default.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/config/pages.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/config/index.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/.gitignore",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/routes/index.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/post.js",
+		"/Users/dev/Google Drive/CoderHouse/styles.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/routes/users.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/users.hbs",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal/views/index.jade",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Express/express-example/routes/users2.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Express/express-example/app.js",
+		"/Users/dev/Google Drive/CoderHouse/users.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Express/express-example/views/layout.hbs",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Express/express-example/routes/index.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Express/express-example/views/user.hbs",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Express/express-example/views/error.hbs",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Express/express-example/package.json",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Express/express-example/bin/www",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/08/servicio-graficar/public/index.html",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/08/servicio-graficar/public/css/styles.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Redes/Twettir/notTwitter/public/css/stylesOriginal.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Redes/Twettir/notTwitter/public/indexOriginal.html",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Redes/Twettir/notTwitter/public/css/styles.css",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Redes/Twettir/notTwitter/public/index.html",
+		"/Users/dev/.ssh/id_rsa_personal.pub",
+		"/Users/dev/.ssh/id_rsa.pub",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Redes/Twettir/notTwitter/public/index2.html",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Redes/Twettir/notTwitter/package.json",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/07/vocalesAMayusculas.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/node102.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Redes/apuntes.txt",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Redes/server.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Redes/Apuntes",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/nodeOnMyOwn.js",
+		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/07/lorem.txt",
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/07/vocalesAMayúsculas.js",
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/1.txt",
-		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/node102.js",
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/2.txt",
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/3.txt",
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/Node101/node103.js",
@@ -265,7 +575,6 @@
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/Clases/03/index.html",
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/02/index.html",
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/02/main.css",
-		"/Users/dev/Google Drive/CoderHouse/styles.css",
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPs/02/readme.md",
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/readme.md",
 		"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/.gitignore",
@@ -287,34 +596,7 @@
 		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/categories/partials/celebritie.html",
 		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/categories/list.html",
 		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/collections/items.js",
-		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/items/items.html",
-		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/controllers/locations.js",
-		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/common/app/views/landings/winteriscoming.js",
-		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/urls/landings.js",
-		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/common/app/bases/view.js",
-		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/landings/didyousell.html",
-		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/landings/available.html",
-		"/Users/dev/code/smaug/app/models/ResourceModels.scala",
-		"/Users/dev/code/smaug/app/resources/item/ABLItemResourceProvider.scala",
-		"/Users/dev/code/smaug/app/controllers/ItemsController.scala",
-		"/Users/dev/code/smaug/test/unit/controllers/ItemsControllerSpec.scala",
-		"/Users/dev/.bash_profile",
-		"/Users/dev/code/smaug/test/unit/resources/ABLItemResourceProviderSpec.scala",
-		"/Users/dev/code/mobile-webapp/config/default.yml",
-		"/Users/dev/code/mobile-webapp/app/config/default-development.js",
-		"/Users/dev/code/mobile-webapp/app/config/markets/www.olx.co.za.js",
-		"/Users/dev/code/mobile-webapp/app/localized/default/templates/desktop/post/success.html",
-		"/Users/dev/code/mobile-webapp/app/config/experiments/development.js",
-		"/Users/dev/code/mobile-webapp/server/middleware/sixpack.js",
-		"/Users/dev/code/mobile-webapp/app/localized/default/templates/desktop/pages/help.html",
-		"/Users/dev/Downloads/bash_profile",
-		"/Users/dev/tools/mobile-tools/qa_changer/laptop_test_in.sh",
-		"/Users/dev/bash_profile",
-		"/Users/dev/tools/launchd.conf",
-		"/Users/dev/code/mobile-webapp/app/middlewares/conversations.js",
-		"/Users/dev/code/mobile-webapp/public/images/desktop/raul.jpg",
-		"/private/etc/profile",
-		"/Users/dev/tools/memcached.plist"
+		"/Users/dev/code/arwenWorkshop2015/mobile-webapp/app/localized/default/templates/desktop/items/items.html"
 	],
 	"find":
 	{
@@ -322,9 +604,11 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/",
+			"/Users/dev/Google Drive/CoderHouse/CoderHouseFullStack/TPFinal",
 			"/Users/dev/code/mobile-webapp/app/localized/default/templates/desktop",
 			"/Users/dev/code/mobile-webapp"
 		]
@@ -334,6 +618,115 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"publi",
+			"ajax",
+			"querystring",
+			"qs",
+			"console",
+			"<",
+			"select",
+			"req",
+			"requi",
+			"input",
+			"itemid",
+			"error",
+			"title",
+			"posting",
+			"fav",
+			"nun",
+			"hbs",
+			"Provinciah",
+			"Guitarras",
+			"name",
+			"col-sm-2",
+			"col-sm-offset-2",
+			"col-sm-8",
+			"id",
+			"xs",
+			"default",
+			"img",
+			"                    <",
+			"thumbnail",
+			"FF831A",
+			"users",
+			"console",
+			"userId",
+			"user",
+			"3000",
+			"list",
+			"console",
+			"date",
+			"    \n",
+			"response",
+			"res",
+			"date",
+			"val",
+			"();\n",
+			"map",
+			"200",
+			"status",
+			"querys",
+			"container",
+			"user",
+			"container",
+			"tweetC",
+			"tweet",
+			"searchu",
+			"search",
+			"sear",
+			"lengt",
+			"user",
+			"username",
+			"#userName",
+			"button",
+			"modal",
+			"error",
+			"leng",
+			"usernam",
+			"form",
+			"sea",
+			"hei",
+			"panel",
+			"centre",
+			"border",
+			"dia",
+			"ingre",
+			"sear",
+			"console",
+			"tweet",
+			"button",
+			"prepend",
+			"show",
+			"feed",
+			"console.l",
+			"console",
+			"fetchtype",
+			"console.",
+			"console",
+			"timestamp",
+			"fetcht",
+			"obj",
+			"ojv",
+			"timestamp",
+			"user",
+			"timestamp",
+			"console",
+			"userName",
+			"user",
+			"Time",
+			"time",
+			"/data",
+			"appen",
+			"contenedor",
+			"gettw",
+			"last",
+			"latest",
+			"return",
+			"console.log",
+			"console.",
+			"fetch",
+			"fet",
+			"console",
 			"\\",
 			"path",
 			"',",
@@ -352,36 +745,7 @@
 			"user",
 			"def get(",
 			"def get",
-			"get",
-			"user",
-			"notification-message",
-			"test",
-			"networksetup",
-			"networkName",
-			"fi",
-			"service",
-			"thunder",
-			"ethernet",
-			"getcurren",
-			"ethernet",
-			"ether",
-			"Rubin",
-			"Leo",
-			"right",
-			"box-letf",
-			"box-left",
-			"box-right",
-			"right",
-			"leader",
-			"Alec",
-			"&",
-			"Leadership",
-			"wi-fi",
-			"start",
-			"ok",
-			"sudo",
-			"arwen",
-			"start"
+			"get"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -389,6 +753,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"col-sm-3",
+			"col-sm-offset-3",
+			"col-sm-6",
 			"box-left",
 			"ethernet"
 		],
@@ -401,30 +768,120 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Clases/Node101/nodeOnMyOwn.js",
+					"file": "TPFinal/models/item.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 216,
+						"buffer_size": 2713,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								216,
-								216
+								983,
+								983
 							]
 						],
 						"settings":
 						{
-							"auto_name": "var fs = require('fs');",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 221.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "TPFinal/routes/items.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								687,
+								687
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 75.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "TPFinal/views/items/listing.nunj",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1096,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								38
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "TPFinal/views/items/noresults.nunj",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 790,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								775,
+								775
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -434,84 +891,86 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "Clases/Node101/node102.js",
+					"buffer": 4,
+					"file": "TPFinal/views/layout.nunj",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2687,
+						"buffer_size": 788,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2516,
-								2516
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "TPFinal/public/stylesheets/home.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 841,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								808,
+								808
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1147.0,
+						"translation.y": 286.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "TPs/07/vocalesAMayusculas.js",
+					"buffer": 6,
+					"file": "TPFinal/public/stylesheets/noresults.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 777,
+						"buffer_size": 428,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								613,
-								613
+								46,
+								46
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "TPs/07/lorem.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 124,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								124,
-								124
-							]
-						],
-						"settings":
-						{
-							"auto_name": "Lorem ipsum dolor sit amet, consectetur adipisicin",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -519,13 +978,72 @@
 					},
 					"stack_index": 2,
 					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "TPFinal/views/home/index.nunj",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 730,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								144,
+								105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "TPFinal/public/javascripts/publish.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2597,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1017.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 25.0
+		"height": 34.0
 	},
 	"input":
 	{
@@ -562,7 +1080,7 @@
 	"project": "fullstack.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -571,6 +1089,66 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"home",
+				"CoderHouseFullStack/TPFinal/public/stylesheets/home.css"
+			],
+			[
+				"item",
+				"CoderHouseFullStack/TPFinal/routes/items.js"
+			],
+			[
+				"publi",
+				"CoderHouseFullStack/TPFinal/public/javascripts/publish.js"
+			],
+			[
+				"error",
+				"CoderHouseFullStack/TPFinal/views/error.nunj"
+			],
+			[
+				"listing",
+				"CoderHouseFullStack/TPFinal/views/items/listing.nunj"
+			],
+			[
+				"sear",
+				"CoderHouseFullStack/TPFinal/routes/search.js"
+			],
+			[
+				"api",
+				"CoderHouseFullStack/TPFinal/routes/api.js"
+			],
+			[
+				"app",
+				"CoderHouseFullStack/TPFinal/app.js"
+			],
+			[
+				"items",
+				"CoderHouseFullStack/TPFinal/routes/items.js"
+			],
+			[
+				"publish",
+				"CoderHouseFullStack/TPFinal/public/javascripts/publish.js"
+			],
+			[
+				"index.nun",
+				"CoderHouseFullStack/TPFinal/views/home/index.nunj"
+			],
+			[
+				"search",
+				"CoderHouseFullStack/TPFinal/public/javascripts/search.js"
+			],
+			[
+				"listi",
+				"CoderHouseFullStack/TPFinal/views/items/listing.nunj"
+			],
+			[
+				"layou",
+				"CoderHouseFullStack/TPFinal/views/layout-navbar.nunj"
+			],
+			[
+				"la",
+				"CoderHouseFullStack/TPFinal/views/layout-navbar.nunj"
+			],
 			[
 				"ablitemre",
 				"smaug/test/unit/resources/ABLItemResourceProviderSpec.scala"
@@ -632,7 +1210,7 @@
 	"settings":
 	{
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
