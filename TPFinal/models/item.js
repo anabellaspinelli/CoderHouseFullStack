@@ -1,74 +1,47 @@
 var Mongo = require('mongodb').MongoClient;
 var ObjectID = require('mongodb').ObjectID;
-var dbURL = 'mongodb://localhost:27017/instroo';
+var dbURL = 'mongodb://localhost:27017/instroo'; //TO-DO remove once dbConnection.js is implemented
+
+var dbConnection = require('../lib/dbConnection');
 
 var itemModel = {
     insert: function(item, callback) {
-        Mongo.connect(dbURL, function(err, db) {
+        dbConnection(function(db) {
             db.collection('items').insert(item, function(err) {
-                db.close();
                 callback(err);
             });
         });
     },
     get: function(itemId, callback) {
-        console.log(itemId);
-
-        Mongo.connect(dbURL, function(err, db) {
+        dbConnection(function(db) {
             db.collection('items').findOne({
                 _id: ObjectID(itemId)
             }, function(err, item) {
-                db.close();
                 callback(err, item);
             });
         });
     },
     search: function(keyword, callback) {
-        var items = [];
+        var keywordFilter = {
+            description: {
+                $regex: keyword || '',
+                $options: "i"
+            },
+            title: {
+                $regex: keyword || '',
+                $options: "i"
+            }
+        }
 
-        Mongo.connect(dbURL, function(err, db) {
-            var cursor = db.collection('items').find({
-                description: {
-                    $regex: keyword || '',
-                    $options: "i"
-                },
-                title: {
-                    $regex: keyword || '',
-                    $options: "i"
-                }
-            });
-            cursor.on('data', function(doc) {
-                items.push(doc);
-            });
-
-            cursor.on('error', function(err) {
-                console.log(err);
-            });
-
-            cursor.on('end', function() {
-                callback(err, items);
-                db.close();
-            });
+        dbConnection(function(db) {
+            dbFind(db, keywordFilter, callback);
         });
     },
     getAll: function(callback) {
-        var items = [];
+        var filter = {};
 
-        Mongo.connect(dbURL, function(err, db) {
-            var cursor = db.collection('items').find({});
-
-            cursor.on('data', function(doc) {
-                items.push(doc);
-            });
-
-            cursor.on('error', function(err) {
-                console.log(err);
-            });
-
-            cursor.on('end', function() {
-                callback(err, items);
-                db.close();
-            });
+        dbConnection(function(db) {
+            dbFind(db, filter, callback);
         });
     },
 
@@ -93,5 +66,23 @@ var itemModel = {
         }
     }
 };
+
+function dbFind(db, filter, callback) {
+    var items = [];
+
+    var cursor = db.collection('items').find(filter);
+
+    cursor.on('data', function(doc) {
+        items.push(doc);
+    });
+
+    cursor.on('error', function(err) {
+        console.log(err);
+    });
+
+    cursor.on('end', function() {
+        callback(items);
+    });
+}
 
 module.exports = itemModel;

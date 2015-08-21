@@ -28,13 +28,7 @@ router.get('/iid-:id', function(req, res, next) {
 router.get('/search/:keyword', function(req, res, next) {
     var keyword = req.params.keyword;
 
-    itemModel.search(keyword, function(err, items) {
-        if (err) {
-            console.log(err);
-            return res.render('error.nunj', {
-                message: err.message
-            });
-        }
+    itemModel.search(keyword, function(items) {
 
         if (items.length > 0) {
             res.render('items/listing.nunj', {
@@ -53,21 +47,15 @@ router.get('/search/:keyword', function(req, res, next) {
 /* GET ALL items */
 router.get('/all', function(req, res, next) {
 
-    itemModel.getAll(function(err, items) {
-        if (err) {
-            console.log(err);
-            return res.render('error.nunj', {
-                message: err.message
-            });
-        }
+    itemModel.getAll(function(items) {
         if (items.length > 0) {
             res.render('items/listing.nunj', {
                 items: items,
                 stylesheets: ['listing']
             });
         } else {
-            res.render('error.nunj', {
-                message: 'Error: No items found'
+            res.render('items/noresults.nunj', {
+                stylesheets: ['noresults']
             });
         }
     });
