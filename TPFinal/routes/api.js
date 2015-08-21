@@ -10,7 +10,7 @@ router.post('/items', function(req, res, next) {
     var schema = itemModel.validations.schema;
     var errorMessages = itemModel.validations.messages;
 
-    Indicative.validate(schema, item, errorMessages).then(function (validation_passed) {
+    Indicative.validateAll(schema, item, errorMessages).then(function (validation_passed) {
         itemModel.insert(item, function() {
             res.json({
                 result: item
