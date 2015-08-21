@@ -11,17 +11,18 @@ router.get('/publish', function(req, res, next) {
     });
 });
 
+/*GET publish succes item page*/
 router.get('/publish/success/:itemId', function(req, res, next) {
-    var itemId = req.url.slice(req.url.indexOf('iid-') + 4);
+    var itemId = req.url.slice(req.url.indexOf('id-') + 3);
 
-    getAndRenderItem(itemId, 'publishsuccess', res)
+    getItemAndRender(itemId, 'publishsuccess', res)
 });
 
 /*GET item page by ID*/
-router.get('/iid-:id', function(req, res, next) {
+router.get('/id-:id', function(req, res, next) {
     var itemId = req.params.id;
 
-    getAndRenderItem(itemId, 'item', res)
+    getItemAndRender(itemId, 'item', res)
 });
 
 /* GET items by keyword */
@@ -29,39 +30,31 @@ router.get('/search/:keyword', function(req, res, next) {
     var keyword = req.params.keyword;
 
     itemModel.search(keyword, function(items) {
-
-        if (items.length > 0) {
-            res.render('items/listing.nunj', {
-                items: items,
-                stylesheets: ['listing']
-            });
-        } else {
-            res.render('items/noresults.nunj', {
-                stylesheets: ['noresults']
-            });
-        }
-
+        renderItemsOrNoResults(res, items);
     });
 });
 
 /* GET ALL items */
 router.get('/all', function(req, res, next) {
-
     itemModel.getAll(function(items) {
-        if (items.length > 0) {
-            res.render('items/listing.nunj', {
-                items: items,
-                stylesheets: ['listing']
-            });
-        } else {
-            res.render('items/noresults.nunj', {
-                stylesheets: ['noresults']
-            });
-        }
+        renderItemsOrNoResults(res, items); //quizás sea un poco mucho esto?
     });
 });
 
-function getAndRenderItem(itemId, template, res) {
+function renderItemsOrNoResults(res, items) {
+    if (items.length > 0) {
+        res.render('items/listing.nunj', {
+            items: items,
+            stylesheets: ['listing']
+        });
+    } else {
+        res.render('items/noresults.nunj', {
+            stylesheets: ['noresults']
+        });
+    }
+}
+
+function getItemAndRender(itemId, template, res) {
     itemModel.get(itemId, function(err, item) {
         if (err) {
             console.log(err);
