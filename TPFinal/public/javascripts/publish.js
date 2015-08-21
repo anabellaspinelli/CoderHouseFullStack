@@ -36,14 +36,58 @@ $(document).ready(function() {
         }
     };
 
+    var inlineErrorMessages = {
+        category: {
+            required: 'Elegí una categoría.',
+        },
+        title: {
+            required: 'Ingresá un título',
+            rangelength: 'El título debe tener entre 10 y 100 caracteres.'
+        },
+        description: {
+            required: 'Ingresá una descripción',
+            rangelength: 'La descripción debe tener entre 30 y 300 caracteres.'
+        },
+        price: {
+            required: 'Ingresá un precio.',
+            number: 'El precio debe ser numéric.o',
+            rangelength: 'El precio debe tener entre 1 y 7 cifras.'
+
+        },
+        name: {
+            required: 'Ingresá tu nombre.',
+            rangelength: 'El nombre debe tener entre 3 y 30 caracteres.'
+        },
+        email: {
+            required: 'Ingresá tu email',
+            email: 'Ingresá un email válido',
+            maxlength: 'El email no puede tener más de 50 caracteres.'
+        },
+        phone: {
+            number: 'Ingresá sólo valores numéricos.',
+            minlength: 'El teléfono debe tener 7 dígitos como mínimo.'
+        },
+        province: {
+            required: 'Ingresá una provincia.'
+        },
+        city: {
+            required: 'Ingresá una ciudad'
+        }
+    }
+
     $('#publish').validate({
-        rules: validationRules
+        rules: validationRules,
+        messages: inlineErrorMessages,
+        invalidHandler: function(event, validator) {
+            console.log('invalid form');
+            event.preventDefault();
+        }
     });
 
-    $('#publish').on('submit', function(e) {
+    $('#publish').on('submit', function(event) {
         var item;
 
-        e.preventDefault();
+        event.preventDefault();
         getFormControls();
         item = extractItemFromForm();
 
@@ -79,54 +123,54 @@ $(document).ready(function() {
 
         if (!getFormControls.$category) {
             $category = $('#category');
+            getFormControls.$category = $category;
         }
 
         if (!getFormControls.$title) {
             $title = $('#title');
+            getFormControls.$title = $title;
         }
 
         if (!getFormControls.$description) {
             $description = $('#description');
+            getFormControls.$description = $description;
         }
 
         if (!getFormControls.$price) {
             $price = $('#price');
+            getFormControls.$price = $price;
         }
 
         if (!getFormControls.$currency) {
             $currency = $('#currency');
+            getFormControls.$currency = $currency;
         }
 
         if (!getFormControls.$name) {
             $name = $('#name');
+            getFormControls.$name = $name;
         }
 
         if (!getFormControls.$email) {
             $email = $('#email');
+            getFormControls.$email = $email;
         }
 
         if (!getFormControls.$phone) {
             $phone = $('#phone');
+            getFormControls.$phone = $phone;
         }
 
         if (!getFormControls.$province) {
             $province = $('#province');
+            getFormControls.$province = $province;
         }
 
         if (!getFormControls.$city) {
             $city = $('#city');
+            getFormControls.$city = $city;
         }
 
-        getFormControls.$category = $category;
-        getFormControls.$title = $title;
-        getFormControls.$description = $description;
-        getFormControls.$price = $price;
-        getFormControls.$currency = $currency;
-        getFormControls.$name = $name;
-        getFormControls.$email = $email;
-        getFormControls.$phone = $phone;
-        getFormControls.$province = $province;
-        getFormControls.$city = $city;
     }
 
     function extractItemFromForm() {

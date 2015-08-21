@@ -61,10 +61,8 @@ var itemModel = {
         },
         messages: {
             required: 'Por favor ingresá {{ field }}',
-            email: 'Por favor ingresá un email válido',
-            number: 'Por favor ingresá sólo números en {{ field }}', 
-            min: 'Por favor ingresá un {{ field }} más largo',
-            max: 'Por favor ingresá un {{ field }} más corto'
+            email: '"{{ value }}" no es un {{ field.substring(7) }} válido.',
+            number: 'Por favor ingresá sólo números en {{ field }}'
         }
     }
 };

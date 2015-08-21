@@ -14,7 +14,7 @@
             <div class="form-group">
                 <label for="category" class="col-sm-3 control-label">Categoría</label>
                 <div class="col-sm-6">
-                    <select class="form-control" id="category" required>
+                    <select class="form-control" id="category" name="category">
                         <option value=""></option>
                         <option>Guitarras</option>
                         <option>Bajos</option>
@@ -65,7 +65,7 @@
                 </div>
                 <label for="currency" class="col-sm-1 control-label">Moneda</label>
                 <div class="col-sm-2">
-                    <select class="form-control" id="currency">
+                    <select class="form-control" id="currency" name="currency">
                         <option>Pesos</option>
                         <option>Dólares</option>
                     </select>
@@ -87,13 +87,13 @@
             <div class="form-group">
                 <label for="phone" class="col-sm-3 control-label">Teléfono</label>
                 <div class="col-sm-2">
-                    <input type="text" class="form-control" id="phone">
+                    <input type="text" class="form-control" id="phone" name="phone">
                 </div>
             </div>
             <div class="form-group">
                 <label for="province" class="col-sm-3 control-label">Provincia</label>
                 <div class="col-sm-2">
-                    <select class="form-control" id="province" required>
+                    <select class="form-control" id="province" name="province">
                         <option value=""></option>
                         <option>Provinciah</option>
                         <option>Provinciah</option>
@@ -107,7 +107,7 @@
                 </div>
                 <label for="city" class="col-sm-1 control-label">Ciudad</label>
                 <div class="col-sm-3">
-                    <select class="form-control" id="city" required>
+                    <select class="form-control" id="city" name="city">
                         <option value=""></option>
                         <option>Ciudadd</option>
                         <option>Ciudadd</option>
