@@ -68,7 +68,7 @@ $(document).ready(function() {
                     showServerValidations(data);
                 } else {
                     console.log('POST success!');
-                    window.location.href = '/items/publish/success/iid-' + data.result._id
+                    window.location.href = '/items/publish/success/id-' + data.result._id
                 }
             },
             dataType: 'json',
