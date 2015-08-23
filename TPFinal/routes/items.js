@@ -7,7 +7,7 @@ var qs = require('querystring');
 router.get('/publish', function(req, res, next) {
     res.render('items/publish.nunj', {
         stylesheets: ['publish'],
-        scripts: ['jquery.validate', 'publish']
+        scripts: ['jquery.validate', 'jquery.custom-file-input', 'publish']
     });
 });
 

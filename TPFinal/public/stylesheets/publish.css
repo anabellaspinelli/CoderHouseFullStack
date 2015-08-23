@@ -18,7 +18,6 @@
 }
 
 body {
-    /*background-image: url('/images/2.jpg');*/
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: -48.9%;
@@ -33,4 +32,9 @@ body {
 
 #errors {
     color: #f00;
+}
+
+.img-thumbnail:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 10px #FF8219;
 }

@@ -45,16 +45,16 @@
                 <label for="images" class="col-sm-3 control-label">Imágenes</label>
                 <div class="col-sm-6">
                     <div class="col-sm-3">
-                        <img src="http://dummyimage.com/180x180/FDE974/ff831a" alt="..." class="img-thumbnail">
+                        <img src="http://dummyimage.com/150x150/FDE974/ff831a&text=∆" alt="..." class="img-thumbnail img-file" id="img-1">
                     </div>
                     <div class="col-sm-3">
-                        <img src="http://dummyimage.com/180x180/FDE974/ff831a" alt="..." class="img-thumbnail">
+                        <img src="http://dummyimage.com/150x150/FDE974/ff831a&text=∆" alt="..." class="img-thumbnail img-file" id="img-2">
                     </div>
                     <div class="col-sm-3">
-                        <img src="http://dummyimage.com/180x180/FDE974/ff831a" alt="..." class="img-thumbnail">
+                        <img src="http://dummyimage.com/150x150/FDE974/ff831a&text=∆" alt="..." class="img-thumbnail img-file" id="img-3">
                     </div>
                     <div class="col-sm-3">
-                        <img src="http://dummyimage.com/180x180/FDE974/ff831a" alt="..." class="img-thumbnail">
+                        <img src="http://dummyimage.com/150x150/FDE974/ff831a&text=∆" alt="..." class="img-thumbnail img-file" id="img-4">
                     </div>
                 </div>
             </div>
@@ -123,4 +123,80 @@
         </div>
         <input type="submit" class="btn btn-lg btn-warning col-sm-6 col-sm-offset-3" id="submit" value="Publicar!">
     </form>
+    <script type="text/json" id="validations">
+        {
+            "rules": {
+                "category": {
+                    "required": true
+                },
+                "title": {
+                    "required": true,
+                    "rangelength": [10, 100]
+                },
+                "description": {
+                    "required": true,
+                    "rangelength": [30, 300]
+                },
+                "price": {
+                    "required": true,
+                    "number": true,
+                    "rangelength": [1, 7]
+                },
+                "name": {
+                    "required": true,
+                    "rangelength": [3, 30]
+                },
+                "email": {
+                    "required": true,
+                    "maxlength": [50]
+                },
+                "phone": {
+                    "number": true
+                },
+                "province": {
+                    "required": true
+                },
+                "city": {
+                    "required": true
+                }
+            },
+            "messages": {
+                "category": {
+                    "required": "Elegí una categoría."
+                },
+                "title": {
+                    "required": "Ingresá un título",
+                    "rangelength": "El título debe tener entre 10 y 100 caracteres."
+                },
+                "description": {
+                    "required": "Ingresá una descripción",
+                    "rangelength": "La descripción debe tener entre 30 y 300 caracteres."
+                },
+                "price": {
+                    "required": "Ingresá un precio.",
+                    "number": "El precio debe ser numérico.",
+                    "rangelength": "El precio debe tener entre 1 y 7 cifras."
+                },
+                "name": {
+                    "required": "Ingresá tu nombre.",
+                    "rangelength": "El nombre debe tener entre 3 y 30 caracteres."
+                },
+                "email": {
+                    "required": "Ingresá tu email",
+                    "email": "Ingresá un email válido",
+                    "maxlength": "El email no puede tener más de 50 caracteres."
+                },
+                "phone": {
+                    "number": "Ingresá sólo valores numéricos.",
+                    "minlength": "El teléfono debe tener 7 dígitos como mínimo."
+                },
+                "province": {
+                    "required": "Ingresá una provincia."
+                },
+                "city": {
+                    "required": "Ingresá una ciudad"
+                }
+            }
+        }
+    </script>
 {% endblock %}
