@@ -73,7 +73,7 @@ function dbFind(db, filter, callback) {
     var cursor = db.collection('items').find(filter);
 
     cursor.on('data', function(doc) {
-        items.push(doc);
+        items.unshift(doc);
     });
 
     cursor.on('error', function(err) {

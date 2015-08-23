@@ -32,7 +32,3 @@ textarea {
 .navbar-default .navbar-brand:hover {
     color: #FFEF93;
 }
-
-.img-thumbnail {
-    max-height: 160px;
-}

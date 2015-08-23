@@ -19,4 +19,5 @@
 
 .img-thumbnail {
     margin-top: 15px;
+    max-height: 140px;
 }
