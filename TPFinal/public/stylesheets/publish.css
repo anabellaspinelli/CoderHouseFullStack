@@ -34,6 +34,10 @@ body {
     color: #f00;
 }
 
+.img-thumbnail {
+    max-height: 100px;
+}
+
 .img-thumbnail:hover {
     cursor: pointer;
     box-shadow: 1px 1px 10px #FF8219;

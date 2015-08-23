@@ -1,11 +1,12 @@
 $(document).ready(function() {
     var validations = JSON.parse($('#validations').html());
     var images = {};
+    window.URL = window.URL || window.webkitURL;
 
     $('.img-file').customFileInput({
         onFilePicked: function (element, file) {
-            console.log(arguments);
             images[element.attr('id')] = file;
+            showUploadedImage(element, file);
         }
     });
 
@@ -135,5 +136,10 @@ $(document).ready(function() {
                 text: error.message
             }));
         });
+    }
+
+    function showUploadedImage(element, file) {
+        element.attr('src', URL.createObjectURL(file));
+        console.log(element);
     }
 });
