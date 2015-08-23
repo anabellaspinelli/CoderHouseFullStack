@@ -34,17 +34,10 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-2">
-            <img src="http://dummyimage.com/300x300/FFE6D1/ff831a" alt="..." class="img-thumbnail">
-        </div>
-        <div class="col-sm-2">
-            <img src="http://dummyimage.com/300x300/FFE6D1/ff831a" alt="..." class="img-thumbnail">
-        </div>
-        <div class="col-sm-2">
-            <img src="http://dummyimage.com/300x300/FFE6D1/ff831a" alt="..." class="img-thumbnail">
-        </div>
-        <div class="col-sm-2">
-            <img src="http://dummyimage.com/300x300/FFE6D1/ff831a" alt="..." class="img-thumbnail">
-        </div>
+        {% for img in item.images %}    
+            <div class="col-sm-2">
+                <img src="{{ img.path }}" alt="..." class="img-thumbnail">
+            </div>
+        {% endfor %}
     </div>
 {% endblock %}

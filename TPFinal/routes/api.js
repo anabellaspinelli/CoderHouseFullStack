@@ -19,11 +19,10 @@ router.post('/items', uploadFields, function(req, res, next) {
         if (req.files[name]) {
             item.images.push({
                 name: name,
-                path: req.files[name][0].path
+                path: '/' + req.files[name][0].path.substring(7)
             });
         }
     });
-    console.log(item);
 
     var schema = itemModel.validations.schema;
     var errorMessages = itemModel.validations.messages;

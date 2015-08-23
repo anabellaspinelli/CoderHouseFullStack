@@ -37,7 +37,7 @@ router.get('/search/:keyword', function(req, res, next) {
 /* GET ALL items */
 router.get('/all', function(req, res, next) {
     itemModel.getAll(function(items) {
-        renderItemsOrNoResults(res, items); //quizás sea un poco mucho esto?
+        renderItemsOrNoResults(res, items);
     });
 });
 

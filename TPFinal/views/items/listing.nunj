@@ -5,7 +5,7 @@
         <a href="/items/id-{{ item._id }}">    
             <div class="item col-sm-8 col-sm-offset-2">        
                 <div class="col-sm-3">
-                    <img src="{{ item.images[0].url }}" alt="..." class="img-thumbnail">
+                    <img src="{{ item.images[0].path }}" alt="..." class="img-thumbnail">
                 </div>
                 <div class="col-sm-9">                
                     <h3 class="item-title">{{ item.title }}</h3>

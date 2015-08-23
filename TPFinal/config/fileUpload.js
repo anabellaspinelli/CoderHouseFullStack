@@ -3,7 +3,7 @@ var multer = require('multer');
 module.exports = {
     storage: multer.diskStorage({
         destination: function(req, file, cb) {
-            cb(null, './uploads/');
+            cb(null, './public/itemImages/');
         },
         filename: function(req, file, cb) {
             var extension = file.originalname.substring(file.originalname.lastIndexOf('.'));

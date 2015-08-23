@@ -13,6 +13,7 @@ textarea {
     border-radius: none;
     background-color: #FF8219;
     color: #fff;
+    border-radius: 0;
 }
 
 .navbar-default .navbar-brand {
@@ -30,4 +31,8 @@ textarea {
 .navbar-default .navbar-nav > li > a:hover, 
 .navbar-default .navbar-brand:hover {
     color: #FFEF93;
+}
+
+.img-thumbnail {
+    max-height: 160px;
 }
