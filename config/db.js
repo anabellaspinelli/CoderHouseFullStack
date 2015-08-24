@@ -1,7 +1,7 @@
 var credentials = {
     user: 'admin',
     pwd: '123456',
-    url: (process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
+    url: ('mongodb://' + process.env.OPENSHIFT_MONGODB_DB_USERNAME + ":" +
         process.env.OPENSHIFT_MONGODB_DB_PASSWORD + "@" +
         process.env.OPENSHIFT_MONGODB_DB_HOST + ':' +
         process.env.OPENSHIFT_MONGODB_DB_PORT + '/' +
