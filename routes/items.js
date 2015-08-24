@@ -15,7 +15,7 @@ router.get('/publish', function(req, res, next) {
 router.get('/publish/success/:itemId', function(req, res, next) {
     var itemId = req.url.slice(req.url.indexOf('id-') + 3);
 
-    getItemAndRender(itemId, 'publishsuccess', res)
+    getItemAndRender(itemId, 'publishSuccess', res)
 });
 
 /*GET item page by ID*/
