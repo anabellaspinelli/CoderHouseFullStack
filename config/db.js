@@ -1,7 +1,7 @@
 var credentials = {
     user: 'admin',
     pwd: '123456',
-    url: ('mongodb://' + 'admin:IIvaNfiZzz3T@' + process.env.OPENSHIFT_MONGODB_DB_HOST + ':' + OPENSHIFT_MONGODB_DB_PORT) ||
+    url: (process.env.OPENSHIFT_MONGODB_DB_URL + process.env.OPENSHIFT_APP_NAME) ||
     'mongodb://admin:123456@localhost:27017/instroo'
 }
 
