@@ -1,3 +1,4 @@
 node_modules
 public/itemImages
 *.sublime-workspace
+*.sublime-project

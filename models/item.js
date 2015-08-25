@@ -72,17 +72,31 @@ function dbFind(db, filter, callback) {
 
     var cursor = db.collection('items').find(filter);
 
-    cursor.on('data', function(doc) {
+    cursor.each(function(err, doc) {
+        if (err) {
+            console.log(err);
+            return;
+        }
+
+        items.unshift(doc);
+        console.log('items    ', items);
+
+        if (cursor.hasNext()) {
+            console.log('HAS NEXT');
+            //callback(items);
+        }
+    });
+
+    /*    cursor.on('data', function(doc) {
         items.unshift(doc);
     });
 
     cursor.on('error', function(err) {
-        console.log(err);
     });
 
     cursor.on('end', function() {
         callback(items);
-    });
+    });*/
 }
 
 module.exports = itemModel;
